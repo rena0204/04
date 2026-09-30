@@ -2,31 +2,12 @@
 
 int main(int argc, char *argv[]) 
 { 
-    int op1, op2; 
-    int res; 
+    int sec;
 
-    printf("input two integers:");
-    scanf("%i %i", &op1, &op2);
+    printf("input the second :");
+    scanf("%i", &sec);
 
-    res = op1 + op2; 
+    printf("time is %i:%i\n", sec/60, sec%60);
     
-    printf("%i + %i = %i\n", op1, op2, res);
-
-    res = op1 - op2; 
-    
-    printf("%i - %i = %i\n", op1, op2, res);
-    
-    res = op1 * op2; 
-    
-    printf("%i * %i = %i\n", op1, op2, res);
-    
-    res = op1 / op2; 
-    
-    printf("%i / %i = %i\n", op1, op2, res);
-    
-    res = op1 % op2; 
-    
-    printf("%i %% %i = %i\n", op1, op2, res);
-
     return 0; 
 }

@@ -1,17 +1,32 @@
 #include <stdio.h>
 
-int main (int argc, char *argv[]) 
+int main(int argc, char *argv[]) 
 { 
-    int x, y, z, m; 
-    int a, b, c; 
-    x = 2; 
-    z = 1; 
-    a = 3; 
-    b = 4; 
-    c = 5;
-    
-    y=a*x*x + b*x + c;
-    m=(x+y+z) / 3;
+    int op1, op2; 
+    int res; 
 
-printf("y=%d, m=%d", y, m); 
+    printf("input two integers:");
+    scanf("%i %i", &op1, &op2);
+
+    res = op1 + op2; 
+    
+    printf("%i + %i = %i\n", op1, op2, res);
+
+    res = op1 - op2; 
+    
+    printf("%i - %i = %i\n", op1, op2, res);
+    
+    res = op1 * op2; 
+    
+    printf("%i * %i = %i\n", op1, op2, res);
+    
+    res = op1 / op2; 
+    
+    printf("%i / %i = %i\n", op1, op2, res);
+    
+    res = op1 % op2; 
+    
+    printf("%i %% %i = %i\n", op1, op2, res);
+
+    return 0; 
 }
